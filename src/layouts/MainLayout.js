@@ -76,7 +76,7 @@ const MainLayout = ({ children }) => {
                 </div>
               </Link>
             </div>
-            <div class="h-4"></div>
+            <div className="h-4"></div>
             <Menus />
           </div>
         </div>
