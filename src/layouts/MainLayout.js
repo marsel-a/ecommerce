@@ -27,7 +27,7 @@ const MainLayout = ({ children }) => {
                   </svg>
                 </label>
               </div>
-              <div className="flex-1 px-2 mx-2">Navbar</div>
+              <div className="flex-1 px-2 mx-2"></div>
               <div className="flex-none hidden lg:block">
                 {/* <ul className="menu menu-horizontal">
                   <li>
