@@ -34,7 +34,7 @@ const MainLayout = ({ children }) => {
                 <div className="dropdown dropdown-end">
                   <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
-                      <img src="https://placeimg.com/80/80/people" />
+                      <Image src="https://placeimg.com/80/80/people" alt="" width={80} height={80} />
                     </div>
                   </label>
                   <ul
@@ -69,7 +69,7 @@ const MainLayout = ({ children }) => {
               <div className="dropdown dropdown-top">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
-                    <Image src="https://placeimg.com/80/80/people" alt="" />
+                    <Image src="https://placeimg.com/80/80/people" alt="" width={80} height={80} />
                   </div>
                 </label>
                 <ul
