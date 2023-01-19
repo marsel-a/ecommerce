@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Menus from '@/components/Menus';
+import Image from 'next/image';
 
 const MainLayout = ({ children }) => {
   return (
@@ -28,15 +29,8 @@ const MainLayout = ({ children }) => {
                 </label>
               </div>
               <div className="flex-1 px-2 mx-2"></div>
-              <div className="flex-none hidden lg:block">
-                {/* <ul className="menu menu-horizontal">
-                  <li>
-                    <a>Navbar Item 1</a>
-                  </li>
-                  <li>
-                    <a>Navbar Item 2</a>
-                  </li>
-                </ul> */}
+              <div className="flex-none hidden items-center lg:flex">
+                <span className="font-semibold mr-2">Welcome, Admin</span>
                 <div className="dropdown dropdown-end">
                   <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
@@ -48,20 +42,13 @@ const MainLayout = ({ children }) => {
                     className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
                   >
                     <li>
-                      <a className="justify-between">Profile</a>
-                    </li>
-                    <li>
-                      <a>Settings</a>
-                    </li>
-                    <li>
-                      <a>Logout</a>
+                      <Link href="/">Logout</Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          {/* <!-- Page content here --> */}
           <div className="px-6 xl:pr-2 pb-2">{children}</div>
         </div>
 
@@ -78,6 +65,24 @@ const MainLayout = ({ children }) => {
             </div>
             <div className="h-4"></div>
             <Menus />
+            <div className="absolute flex items-center bottom-0 m-auto lg:hidden p-4">
+              <div className="dropdown dropdown-top">
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                  <div className="w-10 rounded-full">
+                    <Image src="https://placeimg.com/80/80/people" alt="" />
+                  </div>
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li>
+                    <Link href="/">Logout</Link>
+                  </li>
+                </ul>
+              </div>
+              <span className="font-semibold ml-2">Welcome, Admin</span>
+            </div>
           </div>
         </div>
       </div>
